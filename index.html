@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="css/main.css" />
+
+		<title>Pengelolaan Penumpang</title>
+	</head>
+	<body>
+		<div class="angkot">
+			<div class="angkot-seat">
+				<h1>Pengelolaan Penumpang</h1>
+			</div>
+
+			<div class="container">
+				<ol class="seat-container">
+					<li class="row row-1">
+						<ol class="front-seats" type="A">
+							<li class="seat">
+								<div class="seat-label">
+									<label id="index1">1A</label>
+								</div>
+							</li>
+							<li class="separator">|</li>
+							<li class="seat">
+								<div class="seat-label">
+									<label id="supir">Supir</label>
+								</div>
+							</li>
+						</ol>
+					</li>
+					<li class="row row-2">
+						<ol class="back-seats" type="A">
+							<li class="seat">
+								<div class="seat-label">
+									<label id="index2">2A</label>
+								</div>
+							</li>
+							<li class="seat">
+								<div class="seat-label">
+									<label id="index3">2B</label>
+								</div>
+							</li>
+						</ol>
+					</li>
+					<li class="row row-3">
+						<ol class="back-seats" type="A">
+							<li class="seat">
+								<div class="seat-label">
+									<label id="index4">3A</label>
+								</div>
+							</li>
+							<li class="seat">
+								<div class="seat-label">
+									<label id="index5">3B</label>
+								</div>
+							</li>
+						</ol>
+					</li>
+					<li class="row row-4">
+						<ol class="back-seats" type="A">
+							<li class="seat">
+								<div class="seat-label">
+									<label id="exit">Exit</label>
+								</div>
+							</li>
+							<li class="seat">
+								<div class="seat-label">
+									<label id="index6">4B</label>
+								</div>
+							</li>
+						</ol>
+					</li>
+					<li class="row row-5">
+						<ol class="back-seats" type="A">
+							<li class="seat">
+								<div class="seat-label">
+									<label id="index7">5A</label>
+								</div>
+							</li>
+							<li class="seat">
+								<div class="seat-label">
+									<label id="index8">5B</label>
+								</div>
+							</li>
+						</ol>
+					</li>
+					<li class="row row-6">
+						<ol class="back-seats" type="A">
+							<li class="seat">
+								<div class="seat-label">
+									<label id="index9">6A</label>
+								</div>
+							</li>
+							<li class="seat">
+								<div class="seat-label">
+									<label id="index10">6B</label>
+								</div>
+							</li>
+						</ol>
+					</li>
+					<li class="row row-7">
+						<ol class="back-seats" type="A">
+							<li class="seat">
+								<div class="seat-label">
+									<label id="index11">7A</label>
+								</div>
+							</li>
+							<li class="seat">
+								<div class="seat-label">
+									<label id="index12">7B</label>
+								</div>
+							</li>
+						</ol>
+					</li>
+					<li class="row row-8">
+						<ol class="back-seats" type="A">
+							<li class="seat">
+								<div class="seat-label">
+									<label id="index13">8A</label>
+								</div>
+							</li>
+							<li class="seat">
+								<div class="seat-label">
+									<label id="index14">8B</label>
+								</div>
+							</li>
+						</ol>
+					</li>
+				</ol>
+			</div>
+		</div>
+
+		<div class="input-nama">
+			<div class="input-container">
+				<label for="namaPenumpang" class="namaPenumpang">
+					Nama Penumpang
+				</label>
+				<input type="text" id="namaPenumpang" name="namaPenumpang" />
+				<div class="submit-button">
+					<button
+						class="hapus"
+						value="Submit"
+						onclick="hapusPenumpang(document.getElementById('namaPenumpang').value)"
+					>
+						Hapus pesanan
+					</button>
+					<button
+						class="submit"
+						value="Submit"
+						onclick="tambahPenumpang(document.getElementById('namaPenumpang').value)"
+					>
+						Pesan
+					</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="daftar-penumpang">
+			<table>
+				<tr>
+					<td id="header">Nama Penumpang</td>
+				</tr>
+				<tr>
+					<td id="penumpang1"></td>
+				</tr>
+				<tr>
+					<td id="penumpang2"></td>
+				</tr>
+				<tr>
+					<td id="penumpang3"></td>
+				</tr>
+				<tr>
+					<td id="penumpang4"></td>
+				</tr>
+				<tr>
+					<td id="penumpang5"></td>
+				</tr>
+				<tr>
+					<td id="penumpang6"></td>
+				</tr>
+				<tr>
+					<td id="penumpang7"></td>
+				</tr>
+				<tr>
+					<td id="penumpang8"></td>
+				</tr>
+				<tr>
+					<td id="penumpang9"></td>
+				</tr>
+				<tr>
+					<td id="penumpang10"></td>
+				</tr>
+				<tr>
+					<td id="penumpang11"></td>
+				</tr>
+				<tr>
+					<td id="penumpang12"></td>
+				</tr>
+				<tr>
+					<td id="penumpang13"></td>
+				</tr>
+				<tr>
+					<td id="penumpang14"></td>
+
+				</tr>
+					<td id="penumpang15"></td>
+				</tr>
+			</table>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
